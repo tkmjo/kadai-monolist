@@ -2,7 +2,7 @@
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
-                <button type=“button” class=“navbar-toggle collapsed” data-toggle=“collapse” data-target=“#bs-example-navbar-collapse-1” aria-expanded=“false”>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -30,7 +30,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">マイページ</a>
+                                    <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>
                                 </li>
                                 <li role="separator" class="divider"></li>
                                 <li>
